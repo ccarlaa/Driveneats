@@ -67,7 +67,7 @@ body {
 
 .prato {
     height: 216px;
-    width: 100vw;
+    width: 100%;
     overflow-y: hidden; /*???????*/
     display: inline-flex;
     align-items: center;
@@ -139,7 +139,7 @@ h3 {
 }
 
 .espaço {
-    min-width: 27px;
+    min-width: 16px;
     height: 10px;
 }
 
