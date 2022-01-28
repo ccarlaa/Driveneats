@@ -165,7 +165,7 @@ h3 {
     align-items: center;
 }   
 
-button {
+.botao {
     height: 61px;
     width: 364px;
     left: 25px;
@@ -181,6 +181,10 @@ button {
     letter-spacing: 0.018em;
     text-align: center;
     color: white;
+}
+
+.botaoverde {
+    background-color: green;
 }
 
 }
