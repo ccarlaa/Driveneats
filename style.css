@@ -1,6 +1,7 @@
 body {
     font-family: 'Righteous', cursive;
     background-color: #E5E5E5;
+    position: relative;
 }
 
 @media (max-width: 415px){
@@ -165,14 +166,14 @@ h3 {
     align-items: center;
 }   
 
-.botao {
+.botaocinza {
     height: 61px;
     width: 364px;
     left: 25px;
     top: 949px;
     border-radius: 50px;
     border: none;
-    background-color:#CBCBCB;
+    background-color:grey;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -183,8 +184,139 @@ h3 {
     color: white;
 }
 
-.botaoverde {
-    background-color: green;
+.botao {
+    height: 61px;
+    width: 364px;
+    left: 25px;
+    top: 949px;
+    border-radius: 50px;
+    border: none;
+    background-color:green;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+/*----------------CONFIRMAR PEDIDO -----------*/
+
+.branco {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmacao {
+    height: 353px;
+    width: 377px;
+    left: 19px;
+    top: 336px;
+    border-radius: 9px;
+    background-color:#50D074;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.confirmarpedido {
+    padding-top: 21px;
+    padding-bottom: 28px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+
+}
+
+.resumo {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 200;
+}
+
+.comidas {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+}
+
+.precos {
+    height: 150px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+}
+
+
+.confirmar {
+    height: 52px;
+    width: 329px;
+    left: 43px;
+    top: 583px;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: #50D074;
+    background-color: white;
+    border: none;
+}
+
+.cancelar {
+    height: 52px;
+    width: 333px;
+    left: 43px;
+    top: 635px;
+    border-radius: nullpx;
+    background-color: #50D074;
+    border: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
 }
 
 }

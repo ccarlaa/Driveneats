@@ -164,8 +164,36 @@
     <!-------------------BOTTOM BAR-------------------->
 
     <div class="bottombar">
-      <button id="botao" class="botao">Selecione os 3 itens
-        para fechar o pedido</button>
+      <button id="botaocinza" class="botaocinza">Selecione os 3 itens para fechar o pedido</button>
+      <button id="botao" class="botao" onclick="aparecerMensagem()">Finalizar Pedido</button>
+    </div>
+
+    <!---------------CONFIRMAÇÃO DO PEDIDO------------>
+
+    <div id = "revisaodopedido" class="branco">
+
+      <div class="confirmacao">
+        <h1 class="confirmarpedido">Confirmar pedido</h1>
+
+        <div class="resumo">
+          <div class="comidas">
+            <p id = "pratoescolhido"> bla</p>
+            <p id = "bebidaescolhida"> bla</p>
+            <p id = "sobremesaescolhida"> bla</p>
+            <p><b>Total</b></p>
+          </div>
+          <div class="precos">
+            <p id = "precoprato"> bla</p>
+            <p id = "precobebida"> bla</p>
+            <p id = "precosobremesa"></p>
+            <p id = "resultado"> resultado</p>
+          </div>
+        </div>
+
+        <button class="confirmar">Tudo certo, pode pedir!</button>
+        <button class="cancelar"> Cancelar</button>
+      </div>
+
     </div>
 
     <!---------------------Java-------------------->

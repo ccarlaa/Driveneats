@@ -1,8 +1,10 @@
-let escolhaprato;
-let escolhabebida;
-let escolhasobremesa;
+let p;
+let b;
+let s;
 let total;
-let prato;
+let pratoescolhido;
+let bebidaescolhida;
+let sobremesaescolhida;
 let precoprato;
 let precobebida;
 let precosobremesa;
@@ -13,9 +15,9 @@ function escolherPratoSalada() {
     document.getElementById("salada").style.borderColor = "green";
     document.getElementById("feijao").style.borderColor = "white";
     document.getElementById("arroz").style.borderColor = "white";
-    prato = "Frango Yin Yang c/ salada";
+    pratoescolhido = "Frango c/ salada";
     precoprato = 14.90;
-    escolhaprato = 1;
+    p = 1;
     botaoverde();
 }
 
@@ -23,9 +25,9 @@ function escolherPratoFeijao() {
     document.getElementById("salada").style.borderColor = "white";
     document.getElementById("feijao").style.borderColor = "green";
     document.getElementById("arroz").style.borderColor = "white";
-    prato = "Frango Yin Yang c/ feijão";
+    pratoescolhido = "Frango c/ feijão";
     precoprato = 13.90;
-    escolhaprato = 1;
+    p = 1;
     botaoverde();
 }
 
@@ -33,9 +35,9 @@ function escolherPratoArroz() {
     document.getElementById("salada").style.borderColor = "white";
     document.getElementById("feijao").style.borderColor = "white";
     document.getElementById("arroz").style.borderColor = "green";
-    prato = "Frango Yin Yang c/ arroz";
+    pratoescolhido = "Frango c/ arroz";
     precoprato = 12.90;
-    escolhaprato = 1;
+    p = 1;
     botaoverde();
 }
 
@@ -45,9 +47,9 @@ function escolherBebidaCoca() {
     document.getElementById("coca").style.borderColor = "green";
     document.getElementById("fanta").style.borderColor = "white";
     document.getElementById("guarana").style.borderColor = "white";
-    prato = "coca";
+    bebidaescolhida = "Coca";
     precobebida = 7.90;
-    escolhabebida = 2;
+    b = 2;
     botaoverde();
 }
 
@@ -55,9 +57,9 @@ function escolherBebidaFanta() {
     document.getElementById("coca").style.borderColor = "white";
     document.getElementById("fanta").style.borderColor = "green";
     document.getElementById("guarana").style.borderColor = "white";
-    prato = "fanta";
+    bebidaescolhida = "Fanta";
     precobebida = 5.90;
-    escolhabebida = 2;
+    b = 2;
     botaoverde();
 }
 
@@ -65,9 +67,9 @@ function escolherBebidaGuarana() {
     document.getElementById("coca").style.borderColor = "white";
     document.getElementById("fanta").style.borderColor = "white";
     document.getElementById("guarana").style.borderColor = "green";
-    prato = "guarana";
+    bebidaescolhida = "Guarana";
     precobebida = 5.50;
-    escolhabebida = 2;
+    b = 2;
     botaoverde();
 }
 
@@ -78,9 +80,9 @@ function escolherSobremesaCaramelo() {
     document.getElementById("caramelo").style.borderColor = "green";
     document.getElementById("cafe").style.borderColor = "white";
     document.getElementById("chocolate").style.borderColor = "white";
-    prato = "Pudim tradicional";
-    precocaramelo = 8.00;
-    escolhasobremesa = 3;
+    sobremesaescolhida = "Pudim tradicional";
+    precosobremesa = 8.00;
+    s = 3;
     botaoverde();
 }
 
@@ -88,9 +90,9 @@ function escolherSobremesaCafe() {
     document.getElementById("caramelo").style.borderColor = "white";
     document.getElementById("cafe").style.borderColor = "green";
     document.getElementById("chocolate").style.borderColor = "white";
-    prato = "Pudim de café";
-    precocaramelo = 8.50;
-    escolhasobremesa = 3;
+    sobremesaescolhida = "Pudim de café";
+    precosobremesa = 8.50;
+    s = 3;
     botaoverde();
 }
 
@@ -98,19 +100,32 @@ function escolherSobremesaChocolate() {
     document.getElementById("caramelo").style.borderColor = "white";
     document.getElementById("cafe").style.borderColor = "white";
     document.getElementById("chocolate").style.borderColor = "green";
-    prato = "Pudim de chocolate";
-    precocaramelo = 7.50;
-    escolhasobremesa = 3;
+    sobremesaescolhida = "Pudim de chocolate";
+    precosobremesa = 7.50;
+    s = 3;
     botaoverde();
 }
 
 //------------------BOTAO-----------------------
 
 function botaoverde() {
-    if (escolhaprato === 1 && escolhabebida === 2 && escolhasobremesa === 3){
-        document.getElementById("botao").style.background = "green";
-        const textobotao = document.querySelector(".botao");
-        textobotao.innerHTML = "Fechar pedido";
+    if (p === 1 && b === 2 && s === 3){
+        document.getElementById("botao").style.display = "block";
+        document.getElementById("botaocinza").style.display = "none";
     }
-    total = precoprato + precobebida + escolhasobremesa;
+    total = precoprato + precobebida + precosobremesa;
 }
+
+function aparecerMensagem() {
+    document.getElementById("pratoescolhido").textContent = pratoescolhido;
+    document.getElementById("bebidaescolhida").textContent = bebidaescolhida;
+    document.getElementById("sobremesaescolhida").textContent = sobremesaescolhida;
+    document.getElementById("precoprato").textContent = "R$ " + precoprato.toFixed(2);
+    document.getElementById("precobebida").textContent = "R$ " + precobebida.toFixed(2);
+    document.getElementById("precosobremesa").textContent = "R$ " + precosobremesa.toFixed(2);
+    document.getElementById("resultado").textContent = "R$ " + total.toFixed(2);
+    document.getElementById("revisaodopedido").style.display = "flex";
+
+}
+
+//------------------FINALIZAR PEDIDO--------------
