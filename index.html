@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;600;800;900&family=Poppins:wght@100;200;300&family=Righteous&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <title>driveneats.com</title>
   </head>
@@ -31,6 +32,7 @@
       <div id="salada" class="umprato" onclick="escolherPratoSalada()">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png">
+        <ion-icon id="saladacheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Frango Yin Yang</h1>
           <h2>Um pouco de batata, um pouco de salada</h2>
@@ -44,6 +46,7 @@
       <div id="feijao" class="umprato" onclick="escolherPratoFeijao()">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png">
+        <ion-icon id = "feijaocheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Frango Yin Yang</h1>
           <h2>Um pouco de batata, um pouco de feijão</h2>
@@ -57,6 +60,7 @@
       <div id="arroz" class="umprato" onclick="escolherPratoArroz()">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png" />
+        <ion-icon id = "arrozcheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Frango Yin Yang</h1>
           <h2>Um pouco de batata, um pouco de arroz</h2>
@@ -76,6 +80,7 @@
       <div id = "coca" class="umprato" onclick="escolherBebidaCoca()">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png"/>
+        <ion-icon id = "cocacheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Coca</h1>
           <h2>600ml</h2>
@@ -89,6 +94,7 @@
       <div id = "fanta" class="umprato" onclick="escolherBebidaFanta()">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png">
+        <ion-icon id = "fantacheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Fanta Laranja</h1>
           <h2>350ml</h2>
@@ -102,6 +108,7 @@
       <div id = "guarana" class="umprato" onclick="escolherBebidaGuarana()">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png" />
+        <ion-icon id = "guaranacheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Guaraná</h1>
           <h2>350 ml</h2>
@@ -121,6 +128,7 @@
       <div id="caramelo" class="umprato" onclick="escolherSobremesaCaramelo()">
 
         <img class="imagem" src="./images/pudim 2.png">
+        <ion-icon id = "caramelocheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Pudim</h1>
           <h2>Sabor: tradicional</h2>
@@ -134,6 +142,7 @@
       <div id="cafe" class="umprato" onclick="escolherSobremesaCafe()">
 
         <img class="imagem" src="./images/pudim 2.png">
+        <ion-icon id = "cafecheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Pudim</h1>
           <h2>Sabor: café</h2>
@@ -147,6 +156,7 @@
       <div id="chocolate" class="umprato" onclick="escolherSobremesaChocolate()">
 
         <img class="imagem" src="./images/pudim 2.png" />
+        <ion-icon id = "chocolatecheck" name="checkmark-circle-outline"></ion-icon>
         <div class="texto">
           <h1>Pudim</h1>
           <h2>Sabor: chocolate</h2>
@@ -191,7 +201,7 @@
         </div>
 
         <button class="confirmar">Tudo certo, pode pedir!</button>
-        <button class="cancelar"> Cancelar</button>
+        <button class="cancelar" onclick="botaocancelar()"> Cancelar</button>
       </div>
 
     </div>
