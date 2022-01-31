@@ -23,7 +23,7 @@ body {
     padding-left: 21px;
     position: fixed;
     filter: drop-shadow(0 0 0.75rem grey);
-    z-index: 2;
+    z-index: 1;
 }
 
 .nomeapp {

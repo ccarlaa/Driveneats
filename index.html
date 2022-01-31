@@ -28,9 +28,9 @@
 
     <h1 class="primeirocespaço">Primeiro, seu prato</h1>
 
-    <div class="prato">
+    <div class="prato" data-identifier="dishes">
 
-      <div id="salada" class="umprato" onclick="escolherPratoSalada()">
+      <div id="salada" class="umprato" onclick="escolherPratoSalada()" data-identifier="food-option">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png">
         <ion-icon id="saladacheck" name="checkmark-circle-outline"></ion-icon>
@@ -44,7 +44,7 @@
 
       <div class="espaço"> </div>
 
-      <div id="feijao" class="umprato" onclick="escolherPratoFeijao()">
+      <div id="feijao" class="umprato" onclick="escolherPratoFeijao()" data-identifier="food-option">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png">
         <ion-icon id = "feijaocheck" name="checkmark-circle-outline"></ion-icon>
@@ -58,7 +58,7 @@
 
       <div class="espaço"></div>
 
-      <div id="arroz" class="umprato" onclick="escolherPratoArroz()">
+      <div id="arroz" class="umprato" onclick="escolherPratoArroz()" data-identifier="food-option">
 
         <img class="imagem" src="./images/frango_yin_yang 1.png" />
         <ion-icon id = "arrozcheck" name="checkmark-circle-outline"></ion-icon>
@@ -76,9 +76,9 @@
 
     <h1 class="primeiro">Agora, sua bebida</h1>
 
-    <div class="prato">
+    <div class="prato" data-identifier="drinks">
 
-      <div id = "coca" class="umprato" onclick="escolherBebidaCoca()">
+      <div id = "coca" class="umprato" onclick="escolherBebidaCoca()" data-identifier="food-option">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png"/>
         <ion-icon id = "cocacheck" name="checkmark-circle-outline"></ion-icon>
@@ -92,7 +92,7 @@
 
       <div class="espaço"> </div>
 
-      <div id = "fanta" class="umprato" onclick="escolherBebidaFanta()">
+      <div id = "fanta" class="umprato" onclick="escolherBebidaFanta()" data-identifier="food-option">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png">
         <ion-icon id = "fantacheck" name="checkmark-circle-outline"></ion-icon>
@@ -106,7 +106,7 @@
 
       <div class="espaço"></div>
 
-      <div id = "guarana" class="umprato" onclick="escolherBebidaGuarana()">
+      <div id = "guarana" class="umprato" onclick="escolherBebidaGuarana()" data-identifier="food-option">
 
         <img class="imagem" src="./images/coquinha_gelada 1.png" />
         <ion-icon id = "guaranacheck" name="checkmark-circle-outline"></ion-icon>
@@ -124,9 +124,9 @@
 
     <h1 class="primeiro">Por fim, sua sobremesa</h1>
 
-    <div class="prato">
+    <div class="prato" data-identifier="desserts">
 
-      <div id="caramelo" class="umprato" onclick="escolherSobremesaCaramelo()">
+      <div id="caramelo" class="umprato" onclick="escolherSobremesaCaramelo()" data-identifier="food-option">
 
         <img class="imagem" src="./images/pudim 2.png">
         <ion-icon id = "caramelocheck" name="checkmark-circle-outline"></ion-icon>
@@ -140,7 +140,7 @@
 
       <div class="espaço"> </div>
 
-      <div id="cafe" class="umprato" onclick="escolherSobremesaCafe()">
+      <div id="cafe" class="umprato" onclick="escolherSobremesaCafe()" data-identifier="food-option">
 
         <img class="imagem" src="./images/pudim 2.png">
         <ion-icon id = "cafecheck" name="checkmark-circle-outline"></ion-icon>
@@ -154,7 +154,7 @@
 
       <div class="espaço"></div>
 
-      <div id="chocolate" class="umprato" onclick="escolherSobremesaChocolate()">
+      <div id="chocolate" class="umprato" onclick="escolherSobremesaChocolate()" data-identifier="food-option">
 
         <img class="imagem" src="./images/pudim 2.png" />
         <ion-icon id = "chocolatecheck" name="checkmark-circle-outline"></ion-icon>
@@ -176,26 +176,26 @@
 
     <div class="bottombar">
       <button id="botaocinza" class="botaocinza">Selecione os 3 itens para fechar o pedido</button>
-      <button id="botao" class="botao" onclick="aparecerMensagem()">Finalizar Pedido</button>
+      <button id="botao" class="botao" onclick="aparecerMensagem()">Fechar pedido</button>
     </div>
 
     <!---------------CONFIRMAÇÃO DO PEDIDO------------>
 
-    <div id = "revisaodopedido" class="branco">
+    <div id = "revisaodopedido" class="branco" data-identifier="confirmation-dialog">
 
       <div class="confirmacao">
-        <h1 class="confirmarpedido">Confirmar pedido</h1>
+        <h1 class="confirmarpedido">Confirme seu pedido</h1>
 
         <div class="resumo">
           <div class="comidas">
-            <p id = "pratoescolhido"> bla</p>
-            <p id = "bebidaescolhida"> bla</p>
-            <p id = "sobremesaescolhida"> bla</p>
-            <p><b>Total</b></p>
+            <p id = "pratoescolhido"></p>
+            <p id = "bebidaescolhida"></p>
+            <p id = "sobremesaescolhida"></p>
+            <p><b>TOTAL</b></p>
           </div>
           <div class="precos">
-            <p id = "precoprato"> bla</p>
-            <p id = "precobebida"> bla</p>
+            <p id = "precoprato"></p>
+            <p id = "precobebida"></p>
             <p id = "precosobremesa"></p>
             <p id = "resultado"> resultado</p>
           </div>
