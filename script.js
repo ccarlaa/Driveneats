@@ -197,8 +197,15 @@ function botaocancelar() {
 }
 
 function botaofazerpedido() {
+    const seuNumero = "";
     let nome = prompt("Qual seu nome?");
+    if(!nome) {
+        return
+    }
     let endereço = prompt("Digite seu endereço");
+    if(!endereço) {
+        return 
+    }
     let mensagem = "Olá, gostaria de fazer o pedido:" + "\n" +
     "- " + pratoescolhido + "\n" +
     "- " + bebidaescolhida + "\n" +
@@ -206,6 +213,6 @@ function botaofazerpedido() {
     "Total: " + "R$ " + totalponto.replace(".",",") + "\n" + "\n" +
     "Nome: " + nome + "\n" +
     "Endereço: " + endereço;
-    window.open("https://wa.me/+5561983410446?text="+ encodeURIComponent(mensagem));
-
+    window.confirm("Aqui a aplicação deve leva-lo ao whatsapp do vendedor com a seguinte mensagem:\n" + mensagem);
+    // window.open(`https://wa.me/${seuNumero}?text=` + encodeURIComponent(mensagem));
 }
