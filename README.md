@@ -2,7 +2,7 @@
 
 <p>A aplicação visa simular a realização de um pedido em um restaurante.</p>
 
-[Instagram front-end](https://ccarlaa.github.io/instagram-frontend/)
+[Instagram front-end](https://driveneats-sable.vercel.app/)
 
 ## 📝 Sobre
 
