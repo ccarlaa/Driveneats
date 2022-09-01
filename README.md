@@ -1,6 +1,6 @@
 ## ⚡️ Drivent
 
-<p>A aplicação visa simular a realização de um pedido em um restaurante.</p>
+<p>Aplicação front-end que visa simular a realização de um pedido em um restaurante.</p>
 
 [Drivent](https://driveneats-sable.vercel.app/)
 
