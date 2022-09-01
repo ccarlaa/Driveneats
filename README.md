@@ -2,6 +2,8 @@
 
 <p>Aplicação front-end que visa simular a realização de um pedido em um restaurante.</p>
 
+<img src=images/drivent.gif  width="400" />
+
 [Drivent](https://driveneats-sable.vercel.app/)
 
 ## 📝 Sobre
